@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>City Hospital</title>
+   <link rel="stylesheet" href="Style.css">
+   <link rel="stylesheet" href="Styleindex.css">
+   <!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+   <!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
+   <!-- =============== PAGE VENDOR STYLES ===============-->
+   <!-- =============== BOOTSTRAP STYLES ===============-->
+   <link rel="stylesheet" href="app/css/bootstrap.css" id="bscss">
+   <!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="app/css/app.css" id="maincss">
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+
+   
+</head>
+
+
+  <body class="layout-h">
+   <div class="wrapper">
+    <!-- top navbar
+      <header class="topnavbar-wrapper">
+
+         <div class="collapse navbar-collapse me-5" id="navbarNavDropdown">
+           
+        </div>-->
+
+
+         <div class="tsb">
+             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="doctor.html"> Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="department.html">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="appointment.html">Book Appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="New Folder/static/indexdasboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <button type="button" class=" btn2">Developper</button>
+            </ul>
+        </div>
+         </nav>
+         <!-- END Top Navbar<a href="">Home</a>
+            <a href="">Menu</a>
+            <a href="">About Us</a>
+            <a href="" id="right">Procedures</a>-->
+      </header>
+      <!-- sidebar-->
+
+      <!-- offsidebar-->
+
+      <!-- Main section-->
+      <section>
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <div class="content-heading">
+               <h1>  <i class="fa fa-h-square" style="font-size:32px;"></i> Dashboard</h1>
+               <!--<small data-localize="dashboard.WELCOME"></small>-->
+            </div>
+
+            <div class="row">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <!-- START widget-->
+                     <a href="patient.html">
+                        <div class="panel widget bg-success">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <i class="fa fa-wheelchair" style="font-size:48px;"></i>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="patientcount"></div>
+                                 <div class="text-uppercase"><b>Patient</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="doctor.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-danger">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <i class="fa fa-user-md" style="font-size:48px;"></i>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="doctorcount"></div>
+                                 <div class="text-uppercase"><b>Doctor</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="appointment.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-purple-dark">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="icon-pencil fa-3x"></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="appointmentcount"></div>
+                                 <div class="text-uppercase"><b>Appointment</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="medication.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-info">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-capsules" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="medicationcount"></div>
+                                 <div class="text-uppercase"><b>Medication</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="nurse.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-gray-light">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-user-nurse" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="nursecount"></div>
+                                 <div class="text-uppercase"><b>Nurse</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="department.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-warning">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-briefcase-medical" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="departmentcount"></div>
+                                 <div class="text-uppercase"><b>Department</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="procedure.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-purple-light">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-procedures" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="proccount"></div>
+                                 <div class="text-uppercase"><b>Procedure</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="room.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-green-dark">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-hospital" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="roomcount"></div>
+                                 <div class="text-uppercase"><b>CABIN</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="prescribes.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-danger-light">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-notes-medical" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="prescribescount"></div>
+                                 <div class="text-uppercase"><b>Prescribes</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <a href="undergoes.html">
+                        <!-- START widget-->
+                        <div class="panel widget bg-info-dark">
+                           <div class="row row-table">
+                              <div class="col-xs-4 text-center bg-gray-dark pv-lg">
+                                 <em class="fas fa-syringe" style='font-size:48px'></em>
+                              </div>
+                              <div class="col-xs-8 pv-lg">
+                                 <div class="h1 m0 text-bold" id="undergoescount"></div>
+                                 <div class="text-uppercase"><b>Undergoes</b></div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Page footer-->
+      <footer>
+         <p class="text-center mt-4 copyright">@Copyright <span>City</span> Hospital</p>
+       </footer>
+       
+
+   </div>
+</body>
+
+</html>

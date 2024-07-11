@@ -1,0 +1,123 @@
+.gradient-background {
+    background: linear-gradient(302deg,white);
+    background-size: 180% 180%;
+    /*animation: gradient-animation 9s ease infinite;*/
+}
+#navbarNavDropdown {
+    justify-content: right;
+}
+#our-nav {
+    background: #d6c2c2f5;
+    border-radius: 15px;
+}
+.nav-item a {
+    font-size: 24px;
+    color: #0b4d56;
+}
+
+.btn2 {
+    background: #7ABBC3;
+    color: white;
+    border-radius: 15px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*log in page*/ 
+.full {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+}
+
+.image img {
+    height: 565px;
+    width: 100%;
+}
+
+.image {
+    height: 100vh;
+}
+.loginbox {
+    width: 650px;
+    height: 450px;
+    background: white;
+    color: white;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+}
+.loginbox h1 {
+    margin-left: 35%;
+    font-size: 25px;
+    color: black;
+}
+p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    /* font-weight: bold; */
+    color: black;
+}
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 30px;
+}
+#one {
+    margin-left: 125px;
+    width: 350px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: rgb(44, 123, 106);
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+button:hover {
+    background: blue;
+    color: white;
+}
+#two {
+    margin-left: 125px;
+    width: 350px;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: rgb(221, 233, 229);
+    color: rgb(24, 8, 39);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#psw {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+}
+footer span {
+    color: white;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #c18888;
+    font-weight: 300;
+    margin-top: 20px;
+}

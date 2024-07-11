@@ -1,0 +1,62 @@
+a:hover {
+    text-decoration: none !important;
+ }
+
+ html {
+    position: relative;
+    /* Allows the footer to notice content height */
+    min-height: 100vh;
+    /* My page will always take the full screen */
+ }
+
+ /*footer {
+    position: absolute;
+    bottom: 0;
+    /* I want to be on the bottom... */
+    left: 0;
+    /* ...and to the left */
+ }*/
+
+ body {
+    background-image: url("images/hospital.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ .tsb{
+    background-color: white;
+    overflow: hidden;
+}
+/*Topnav link style*/
+.tsb a{
+    display: block;
+   padding: 20px 20px;  
+   float: left;
+   color: #fff;
+   text-decoration: none;
+   font-size: 22px;
+}
+.tsb a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+.tsb #right{
+    float: right;
+    background-color: red;
+    color: black;
+}
+.tsb #right:hover{
+    background-color: green;
+    color: #fff;
+}
+ h1 {
+    color: rgb(173, 93, 26);
+ }
+
+ .content-heading,
+ section {
+    background-image: url("/images/dark.png");
+ }
+ .content-wrapper{
+ }
+ 

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> City Hospital | Registration </title>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+    <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/line-icons-pro/styles.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="Styleindex.css">
+
+</head>
+<body class="gradient-background">
+    <div class="wrapper">
+        <!--=== Header v1 ===-->
+        <div class="header-v1">
+            <!-- Topbar -->
+            <div class="topbar-v1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-inline top-v1-contacts">
+                                <li>
+                                    <i class="fa fa-envelope"></i> Email: Cityhospital@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i> Contact no : 88666 00555
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Topbar -->
+
+            <!-- Navbar -->
+            <div class="navbar mega-menu" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="res-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="navbar-brand">
+                            <a href="index.html">
+                                <img src="img/favicon.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div><!--/end responsive container-->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <div class="res-container">
+                            <ul class="nav navbar-nav">
+                                <!-- Home  -->
+                                <li class="nav-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <!-- End Home-->
+                                <!-- login -->
+                                <li class="nav-item">
+                                    <a href="login.html">Log In</a>
+                                </li>
+                                <!-- End login -->
+                                <!-- Appointment -->
+                                <li class="nav-item">
+                                    <a href="appointment.html">Book Appointment </a>
+                                </li>
+                                <!-- End Appointment -->
+                                <!-- Registration -->
+                                <li class="nav-item">
+                                    <a href="registration.html">Registration</a>
+                                </li>
+                                <!-- End registration -->
+                                <!-- Contact Us -->
+                                <li class="nav-item">
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <!-- End Contact us -->
+                                <button type="button" class=" btn2">Developper</button>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+
+
+        <!-- Image title -->
+
+        <div style="text-align: center; margin-top: 50px;">
+            <h1><b>REGISTER</b></h1>
+        </div>
+
+        <!-- End title  -->
+
+
+        <!--=== Content Part ===-->
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <form onsubmit="showMsg(0);return false;" method="post" class="reg-page">
+                        <div class="reg-header">
+                            <h2>Register a new account</h2>
+                            <p>Already Signed Up? Click <a href="login.html" class="color-green">Sign In</a> to login
+                                your account.</p>
+                        </div>
+
+                        <label>First Name</label>
+                        <input type="text" class="form-control " style="margin-bottom: 20px;" required="">
+
+                        <label>Last Name</label>
+                        <input type="text" class="form-control " style="margin-bottom: 20px;" required="">
+
+                        <label>Email Address <span class="color-red">*</span></label>
+                        <input type="text" class="form-control " style="margin-bottom: 20px;" required="">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Password <span class="color-red">*</span></label>
+                                <input type="password" class="form-control " style="margin-bottom: 20px;" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Confirm Password <span class="color-red">*</span></label>
+                                <input type="password" class="form-control " style="margin-bottom: 20px;" required="">
+                            </div>
+                        </div>
+                        <div class="alert alert-success successBox">
+                            <button type="button" class="close" onclick="showMsg(1);">×</button>
+                            <strong style="font-size: 16px;">Congratulations!</strong><span class="alert-link"> You Have
+                                Successfully Registered.</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-6 checkbox">
+                                <label>
+                                    <input type="checkbox" required="">
+                                    I read <a href="#" class="color-green">Terms and Conditions</a>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <button class="btn-u" type="submit">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/container-->
+        <!--=== End Content Part ===-->
+
+        
+    </div><!--/wrapper-->
+
+    <!-- Java scripts 
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        function showMsg(flag) {
+            if (flag == 0) {
+                $('.successBox').css('display', 'block');
+            } else {
+                $('.successBox').css('display', 'none');
+            }
+        }
+    </script>-->
+    <footer>
+        <p class="text-center mt-4 copyright">@Copyright <span>City</span> Hospital</p>
+    </footer>
+
+</body>
+
+</html>
